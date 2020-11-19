@@ -1,0 +1,20 @@
+<template>
+    <template if:true={show}>
+        <lightning-card >
+            <div class="slds-align_absolute-center">
+                <img src= {tomImg}>
+               <lightning-button variant="brand"  label="Show Jerry" onclick={showTomHandler} ></lightning-button>
+            </div>
+           
+        </lightning-card>
+    </template>
+    <template if:false={show}>
+        <lightning-card >
+            <div class="slds-align_absolute-center">
+               <img src={jerryImg} style="width:49%"> 
+               <lightning-button variant="brand" label="Show Tom" onclick={showJerryHandler} ></lightning-button>
+            </div>
+            
+        </lightning-card>
+    </template>
+</template>

@@ -1,0 +1,28 @@
+<template>
+    <lightning-card  title="For:Each Demo" icon-name="custom:custom62">
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <tr class="slds-line-height_reset">
+            <th><b>Index</b></th>
+            <th><b>Id</b></th>
+            <th><b>Name</b></th>
+            <th><b>Email</b></th>
+        </tr>
+        <template for:each={contacts} for:item="contact" for:index="index">
+            <tr key={contact.Id}>
+                <td>{index}</td>
+                <td>{contact.Id}</td>
+                <td>{contact.Name}</td>
+                <td>{contact.Email}</td>
+              
+            </tr>
+        </template>
+    </table>
+    </lightning-card>
+    <lightning-card  title="Iterator Demo" icon-name="custom:custom62">
+        <template iterator:it={contacts}>
+            <div key={it.value.Id}>
+                {it.value.Name} - {it.value.Email}<br/><br/>
+            </div>
+                </template>
+    </lightning-card>
+</template>
