@@ -1,0 +1,62 @@
+<template>
+  <lightning-card  title="Calculator" icon-name="custom:custom34">
+    <c-Calculate-Child expression-value={expression} result={result}></c-Calculate-Child>
+    <lightning-layout multiple-rows>
+      <lightning-layout-item style="width:10%" >
+        <lightning-button label="1" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="2" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="3" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="*" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout multiple-rows>
+      <lightning-layout-item style="width:10%" >
+        <lightning-button label="4" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="5" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="6" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="+" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout multiple-rows>
+      <lightning-layout-item style="width:10%" >
+        <lightning-button label="7" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="8" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="9" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="-" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout multiple-rows>
+      <lightning-layout-item style="width:10%" >
+        <lightning-button label="CLR" onclick={clear} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="0" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="=" onclick={submit} ></lightning-button>
+      </lightning-layout-item>
+      <lightning-layout-item style="width:10%">
+        <lightning-button label="/" onclick={handleClick} ></lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+    
+  </lightning-card>
+</template>
